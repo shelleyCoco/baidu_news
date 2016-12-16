@@ -1,0 +1,29 @@
+<div>
+	<div>
+		<ul class="titlele">
+			<li>
+				<a href="javascript:;">{{data2}}</a><span>CHINA</span><img src="images/arrow.png" /></li>
+			<li>
+				<a href="javascript:;">时政要闻</a>
+			</li>
+			<li>
+				<a href="javascript:;">台湾</a>
+			</li>
+			<li>
+				<a href="javascript:;">港澳</a>
+				<span><a href="javascript:;">更多</a></span></li>
+
+		</ul>
+	</div>
+	<div class="cont">
+		<ul class="list">
+			<li ng-repeat='item in data' ng-class='{wei:$index==0}'>
+				{{item.title | maxLen}}
+			</li>
+		</ul>
+		<div class="img">
+		<img ng-repeat='img in img1' ng-src='{{img.img}}' alt="" />
+		</div>
+	</div>
+</div>
+	
